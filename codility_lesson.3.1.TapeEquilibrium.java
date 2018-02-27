@@ -8,13 +8,13 @@ import java.util.Arrays;
 class Solution { // 50/100 pkt
     public int solution(int[] A) {
         // write your code in Java SE 8
-        int ret=10000;
-        int size = A.length;
-        int sum = IntStream.of(A).sum();
+        int ret=10000; // max different
+        int size = A.length; //size of array
+        int sum = IntStream.of(A).sum(); // sum of each element 
         for (int i=1; i<size; i++){
-            int[] firstArray = Arrays.copyOfRange(A, 0, i); //new array, it will be end
-            int sumB = IntStream.of(firstArray).sum();
-            if (Math.abs(sum - 2*sumB) < ret) ret = Math.abs(sum - 2*sumB);
+            int[] firstArray = Arrays.copyOfRange(A, 0, i); //new array 
+            int sumB = IntStream.of(firstArray).sum(); //sum element of new array
+            if (Math.abs(sum - 2*sumB) < ret) ret = Math.abs(sum - 2*sumB); // array sub new 2*array
         }
         return ret;
     }
