@@ -4,7 +4,7 @@ import java.util.Arrays;
 // you can write to stdout for debugging purposes, e.g.
 // System.out.println("this is a debug message");
 
-class Solution {
+class Solution { //100/100 pkt
     public int solution(int[] A) {
         // write your code in Java SE 8
         int size = A.length;

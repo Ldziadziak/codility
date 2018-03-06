@@ -5,7 +5,7 @@
 // System.out.println("this is a debug message");
 
 class Solution {
-    public int solution(String S) {
+    public int solution(String S) {   //75/100 pkt
         // write your code in Java SE 8
         int size = S.length();
         
